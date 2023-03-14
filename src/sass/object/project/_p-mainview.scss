@@ -19,9 +19,10 @@
 
 .p-images__image {
 	width: 100%;
-	animation: disappear 1s forwards; 
-	// opacity: 0;
-	// transition: all 3s;
+	// animation: disappear 1s forwards; 
+	opacity: 0;
+	// visibility: hidden;
+	transition: opacity 3s;
 }
 
 .p-images__image:nth-child(n+2) {
@@ -33,28 +34,30 @@
 
 
 .p-images__image.is-active {
-	animation: appear 1s forwards;
-}
-
-.p-images__image[data-target='category1'] {
+	// animation: appear 1s forwards;
 	opacity: 1;
+	// visibility: visible;
 }
 
+// .p-images__image[data-target='category1'] {
+// 	opacity: 1;
+// }
 
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
-@keyframes disappear {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+// @keyframes appear {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes disappear {
+//   0% {
+//     opacity: 1;
+//   }
+//   100% {
+//     opacity: 0;
+//   }
+// }

@@ -218,8 +218,9 @@ select::-ms-expand {
 
 .p-images__image {
   width: 100%;
-  -webkit-animation: disappear 1s forwards;
-          animation: disappear 1s forwards;
+  opacity: 0;
+  -webkit-transition: opacity 3s;
+  transition: opacity 3s;
 }
 
 .p-images__image:nth-child(n+2) {
@@ -229,47 +230,9 @@ select::-ms-expand {
 }
 
 .p-images__image.is-active {
-  -webkit-animation: appear 1s forwards;
-          animation: appear 1s forwards;
-}
-
-.p-images__image[data-target=category1] {
   opacity: 1;
 }
 
-@-webkit-keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes disappear {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes disappear {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 .p-menu-items__item {
   padding: 1em 2em;
   cursor: pointer;

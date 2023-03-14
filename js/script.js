@@ -20,9 +20,5 @@ jQuery(function ($) {
       $js_category_item_target.removeClass(classActive);
       $js_default_category_item_target.addClass(classActive);
     }
-  );
-  
-
-
-
+  );  
 });
