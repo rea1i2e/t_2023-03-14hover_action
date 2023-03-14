@@ -1,0 +1,29 @@
+@use 'global' as *;
+@use 'sass:math';
+
+.p-menu-items__item {
+	padding: 1em 2em;
+	cursor: pointer;
+}
+
+.p-images__image {
+  position: relative;
+  width: 100%;
+}
+
+.p-images__image::before {
+  display: block;
+  padding-top: 100%;
+  content:"";
+}
+
+.p-images__image img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

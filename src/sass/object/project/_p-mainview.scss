@@ -1,0 +1,57 @@
+@use 'global' as *;
+@use 'sass:math';
+
+.p-mainview {
+}
+
+.p-mainview__inner {
+	display: flex;
+}
+
+.p-mainview__menu {
+	width: 30%;
+}
+
+.p-mainview__images {
+	position: relative;
+	width: 70%;
+}
+
+.p-images__image {
+	width: 100%;
+	animation: disappear 1s forwards;
+}
+
+.p-images__image:nth-child(n+2) {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+// .js-category-item-target[data-target='category1'] {
+// 	opacity: 1;
+// }
+
+.p-images__image.is-active {
+	animation: appear 1s forwards;
+}
+
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
