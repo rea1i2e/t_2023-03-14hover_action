@@ -218,7 +218,8 @@ select::-ms-expand {
 
 .p-images__image {
   width: 100%;
-  opacity: 0;
+  -webkit-animation: disappear 1s forwards;
+          animation: disappear 1s forwards;
 }
 
 .p-images__image:nth-child(n+2) {
