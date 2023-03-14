@@ -8,7 +8,7 @@ jQuery(function ($) {
   // カテゴリーメニューにホバーしたら
   $js_category_item.hover(
     function () {
-      const this_category = $(this).data("category"); // ホバーされたカテゴリのdata-categoryの属性値を取得
+      let this_category = $(this).data("category"); // ホバーされたカテゴリのdata-categoryの属性値を取得
       $js_category_item.removeClass(classActive); // すべてのカテゴリーから.is-active削除
       $(this).addClass(classActive); // ホバー中のカテゴリーに.is-active追加
       $js_category_item_target.removeClass(classActive); // すべてのイメージから.is-active削除
