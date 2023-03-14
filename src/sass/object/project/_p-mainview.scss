@@ -19,7 +19,9 @@
 
 .p-images__image {
 	width: 100%;
-	animation: disappear 1s forwards;
+	// animation: disappear 1s forwards; 
+	opacity: 0;
+	// transition: all 3s;
 }
 
 .p-images__image:nth-child(n+2) {
@@ -29,12 +31,13 @@
 }
 
 
-// .js-category-item-target[data-target='category1'] {
-// 	opacity: 1;
-// }
 
 .p-images__image.is-active {
 	animation: appear 1s forwards;
+}
+
+.p-images__image[data-target='category1'] {
+	opacity: 1;
 }
 
 
